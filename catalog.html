@@ -60,13 +60,71 @@
             <h1>Перформаторы</h1>
 
             <section>
-                <h2>Фильтр товаров</h2>
-                <!-- Здесь будет форма -->
+                <h2>Фильтр:</h2>
+                <form action="get">
+                    <fieldset>
+                        <legend>Цена:</legend>
+                        <input type="range" min="0" max="100" step="1" value="50"> 
+                        <div>
+                            <input type="text" name="" id="">
+                            <input type="text" name="" id="">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Производители:</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Bosch</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Интерскол</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Makiata</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Dewalt</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Hitachi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <input type="radio" name="" id="">
+                                <label for="">Аккумуляторные</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="" id="">
+                                <label for="">Сетевые</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
             </section>
 
             <section>
                 <h2>Список перформаторов</h2>
-                <!-- Здесь будет сортировка товаров -->
+                <div>
+                    <p>Сортировка:</p>
+                    <ul>
+                        <li><a href="#">По цене</a></li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По функционалу</a></li>
+                    </ul>
+                    <p>
+                        <button>Сортировка вверх</button>
+                        <button>Сортировка вниз</button>
+                    </p>
+                </div>
                 <ul>
                     <li>
                         <h3>
@@ -221,6 +279,22 @@
                         </p>
                     </li>
                 </ul>
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">Следующая</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Пара слов о перформаторах</h2>
+                <p>
+                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                </p>
+                <p>
+					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                </p>
             </section>
 
         </main>
@@ -228,22 +302,28 @@
         <!-- Footer -->
         <footer>
             <div>
-                <a>Техномарт</a>
+                <div>
+                    <a>Техномарт</a>
+                    <ul>
+                        <li><a href="#">Компания</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
                 <div>
                     <p>
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                     </p>
+                    <ul>
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Техника</a></li>
+                        <li><a href="#">Инструменты</a></li>
+                        <li><a href="#">Спецпредложения</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>Главная</li>
-                    <li><a href="company.html">Компания</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="news.html">Новости</a></li>
-                    <li><a href="offers.html">Спецпредложения</a></li>
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
-                </ul>
             </div>
             <div>
                 <p>© 2010–2019 Компания «Техномарт»<br>
