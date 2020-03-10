@@ -567,17 +567,17 @@ input[type=search]:focus + label path {
 }
 
 .slider-controls label::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
 }
 
 #slide-1:checked ~ .slider-controls .slider-controls__point-1::after,
 #slide-2:checked ~ .slider-controls .slider-controls__point-2::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 2px;
     top: 2px;
@@ -598,10 +598,10 @@ input[type=search]:focus + label path {
 }
 
 .slider-controls__arrow label::before {
-    content: "";
+    content: '';
     width: 24px;
     height: 24px;
-    border: 3px solid #fff;
+    border: 3px solid #ffffff;
     position: absolute;
     top: 0;
     transform: rotate(45deg);
@@ -673,7 +673,7 @@ input[type=search]:focus + label path {
     width: 195px;
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color: #ffffff;
     background-color: #ee3643;
     text-align: center;
     border-radius: 3px;
@@ -754,6 +754,10 @@ input[type=search]:focus + label path {
     background-position: 160px 0;
 }
 
+.popular-item:hover {
+    box-shadow: 0 5px 20px 0 #bec2c6;
+}
+
 .popular-item__img {
     position: relative;
     width: 220px;
@@ -807,6 +811,79 @@ input[type=search]:focus + label path {
     border-color: transparent transparent transparent #ee3643;
 }
 
+.popular-item:hover img {
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+
+.popular-item:hover .item-buttons {
+    opacity: 1;
+    transition: 0.2s ease-out;
+}
+
+.item-buttons {
+    position: absolute;
+    top: 43px;
+    margin: 0;
+    opacity: 0;
+}
+
+.item-buttons button {
+    width: 135px;
+    font-size: 14px;
+    padding: 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-buttons .button-buy {
+    position: relative;
+    padding: 11px 0;
+    margin-bottom: 7px;
+    color: #ffffff;
+    background-color: #63a63e;
+    box-shadow: inset 0 -3px 0 0 #367315;
+    border: none;
+}
+
+.item-buttons .button-buy:hover {
+    background-color: #5fbb2d;
+}
+
+.item-buttons .button-buy:active {
+    background-color: #518534;
+    box-shadow: none
+}
+
+.button-buy svg {
+    position: absolute;
+    left: 12px;
+}
+
+.button-buy:hover svg path,
+.button-buy:hover svg circle,
+.button-buy:active svg path,
+.button-buy:active svg circle {
+    fill: #ffffff;
+}
+
+.item-buttons .button-bookmarks {
+    color: #32425c;
+    background-color: #ffffff;
+    border: 3px solid #63a63e;
+    padding: 9px 0;
+}
+
+.item-buttons .button-bookmarks:hover {
+    border-color: #32425c;
+}
+
+.item-buttons .button-bookmarks:active {
+    color: #c1c6ce;
+    border-color: #c1c6ce;
+}
+
 /* Popular manufacturers */
 
 .popular-manufacturers {
@@ -829,7 +906,7 @@ input[type=search]:focus + label path {
 }
 
 .manufacturers-item:hover {
-    box-shadow: 0 10px 35px 0 #bec2c6;
+    box-shadow: 0 5px 20px 0 #bec2c6;
     z-index: 1;
 }
 
@@ -1048,7 +1125,7 @@ input[type=search]:focus + label path {
     margin-top: 37px;
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color: #ffffff;
     background-color: #ee3643;
     border-radius: 3px;
 }
@@ -1076,7 +1153,7 @@ input[type=search]:focus + label path {
     margin-top: 36px;
     width: 300px;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
     background-color: #ee3643;
     border-radius: 3px;
     border: 0;
@@ -1252,4 +1329,223 @@ input[type=search]:focus + label path {
 .feedback a:active {
     color: #e53643;
     text-decoration: none;
+}
+
+/* Modal form */
+
+.modal-show {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    margin-top: -225px;
+    margin-left: -310px;
+    padding-top: 46px;
+    border-top: 7px solid #ee3643;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px 5px #b8b8b8;
+    box-sizing: border-box;
+    animation: appearance 0.7s ease-out;
+}
+
+.contact-form .form-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+.contact-form p {
+    margin: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    border: 2px solid #999999;
+    border-radius: 3px;
+}
+
+.contact-form input {
+    width: 186px;
+    padding: 7px 15px;
+}
+
+.contact-form textarea {
+    width: 428px;
+    height: 87px;
+    padding: 8px 14px 14px;
+}
+
+.contact-form .form-message {
+    margin-top: 22px;
+}
+
+.contact-form .form-buttons {
+    min-height: 38px;
+    margin-top: 35px;
+    padding: 36px 80px 37px;
+    background-color: #f4f4f4;
+}
+
+.contact-form button[type=submit] {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ee3643;
+    font-family: "Cuprum",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/* Modal buy */
+
+.modal-buy {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    margin-left: -310px;
+    margin-top: -140px;
+    background-color: #fff;
+    border-top: 7px solid #ee3643;
+    box-shadow: 0 15px 32px 0 #cccccc;
+    animation: appearance 0.7s ease-out;
+}
+
+.modal-buy .buy-popup {
+    position: relative;
+}
+
+.modal-buy .heading-notifications {
+    display: flex;
+    padding: 45px 80px;
+}
+
+.modal-buy h2 {
+    margin: 0;
+    margin-left: 30px;
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: -1.4px;
+    color: #000000;
+    align-self: center;
+}
+
+.modal-buy .buy-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 80px;
+    background-color: #f1f1f1;
+}
+
+.buy-buttons a,
+.buy-buttons .continue-buy {
+    display: block;
+    width: 220px;
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Cuprum",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 4px;
+}
+
+.buy-buttons a {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.buy-buttons .continue-buy {
+    background-color: #ffffff;
+    border: none;
+}
+
+/* Modal map */
+
+.modal-map {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.map-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 940px;
+    height: 445px;
+    margin-top: -225px;
+    margin-left: -470px;
+    background-image: url(../img/map-big.jpg);
+    background-repeat: no-repeat;
+    box-shadow: 0 0 25px 5px #b8b8b8;
+    animation: appearance 0.7s ease-out;
+}
+
+.button-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-close::before,
+.button-close::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    top: 12px;
+    left: 2px;
+    background-color: #ee3643;
+}
+
+.button-close::before {
+    transform: rotate(45deg);
+}
+
+.button-close::after {
+    transform: rotate(-45deg);
+}
+
+/* Animation */
+
+@keyframes appearance {
+    0% {
+        transform: translateY(-800px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
