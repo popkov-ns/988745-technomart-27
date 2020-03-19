@@ -378,7 +378,7 @@ input[type=search]:focus + label path {
 }
 
 .user-details a:first-child::before {
-    content: "";
+    content: '';
     width: 5px;
     height: 5px;
     position: absolute;
@@ -470,7 +470,7 @@ input[type=search]:focus + label path {
 }
 
 .breadcrumbs-item:not(:last-child) a::after {
-    content: "";
+    content: '';
     width: 8px;
     height: 8px;
     border: 1px solid #c1c6ce;
@@ -912,7 +912,7 @@ main h1 {
     box-sizing: border-box;
 }
 
-.popular-products .popular-item:last-child {
+.popular-item.new {
     background-image: url(../img/new-products.png);
     background-repeat: no-repeat;
     background-position: 160px 0;
@@ -997,7 +997,7 @@ main h1 {
     font-size: 14px;
     padding: 0;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -1307,6 +1307,7 @@ main h1 {
     margin-top: 32px;
     border: 0;
     background: 0 0;
+    cursor: pointer;
 }
 
 .contacts .write-us {
@@ -1330,6 +1331,242 @@ main h1 {
 
 .contacts .write-us:active {
     background-color: #ba2732;
+}
+
+/* Product catalog */
+
+.product-catalog {
+    margin-top: 20px;
+}
+
+.product-catalog .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Filter */
+
+.filter {
+    font-family: "PT Sans",Arial,sans-serif;
+    width: 220px;
+    color: #000000;
+}
+
+.filter h2 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 8px 0 10px 19px;
+    background-color: #f7f3ec;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.filter-form fieldset {
+    padding: 0 0 26px;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-form legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.filter-form fieldset:first-of-type {
+    margin-top: 11px;
+}
+
+.filter-form .price {
+    margin-bottom: 16px;
+}
+
+.filter-form .range {
+    position: relative;
+    padding: 38px 20px;
+    background-color: #f7f3ec;
+}
+
+.range p {
+    margin: 0;
+}
+
+.range .line {
+    width: 180px;
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.range .line-green {
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    top: 38px;
+    background-color: #00ca74;
+}
+
+.range-left img,
+.range-right img {
+    position: absolute;
+    top: 29px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.range-right img {
+    left: 140px;
+}
+
+.filter-form .cost {
+    position: relative;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost p {
+    margin-top: 0;
+}
+
+.cost input {
+    width: 75px;
+    font-family: "PT Sans",Arial,sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #f7f3ec;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.filter-form .cost::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    top: 20px;
+    left: 105px;
+    background-color: #444444;
+}
+
+.filter-form fieldset:nth-of-type(2) {
+    margin-top: 16px;
+    padding-bottom: 22px;
+}
+
+.filter-form .manufac-list {
+    margin-top: 14px;
+}
+
+.manufac-item label {
+    position: relative;
+    line-height: 20px;
+    padding-left: 34px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.manufac-item:not(:last-child) label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.manufac-item label::before {
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: -2px;
+    left: -1px;
+    border: 2px solid #c5c5c5;
+    border-radius: 3px;
+}
+
+.filter-checkbox:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    top: -2px;
+    left: -1px;
+    background-image: url(../img/svg/checkbox-on.svg);
+    background-repeat: no-repeat;
+}
+
+.manufac-item label:hover::before {
+    border-color: #b5b5b5;
+}
+
+.filter-form fieldset:nth-of-type(3) {
+    margin-top: 18px;
+}
+
+.filter-form .nutrition-list {
+    margin-top: 12px;
+}
+
+.nutrition-item label {
+    position: relative;
+    padding-left: 34px;    
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nutrition-item:not(:last-child) label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.nutrition-list label::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: 0;
+    border: 5px solid #c5c5c5;
+    border-radius: 50%;
+}
+
+.filter-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 6px;
+    left: 8px;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+}
+
+.filter-form button {
+    width: 140px;
+    margin-top: 52px;
+    padding: 9px 0;
+    font-family: "PT Sans",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.filter-form button:hover {
+    border-color: #bdc6ca;
+}
+
+.filter-form button:active {
+    outline-color: #ee3643;
 }
 
 /* About product */
@@ -1442,6 +1679,11 @@ main h1 {
 
 .footer-submenu .contacts a:hover {
     text-decoration: underline;
+}
+
+.footer-submenu .contacts a:active {
+    color: #a4abb4;
+    text-decoration: none;
 }
 
 .footer-submenu__list {
