@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Интернет-магазин строительных материалов «Техномарт»</title>
-        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -20,11 +20,11 @@
                     </form>
                     <ul class="menu-list">
                         <li class="menu-item">
-                            <a href="#">Закладки: <span>0</span></a>
+                            <a class="menu-link" href="#">Закладки: <span>0</span></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#6a7180" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Корзина: <span>0</span></a>
+                            <a class="menu-link" href="#">Корзина: <span>0</span></a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#6a7180" cx="4.5" cy="13.5" r="1.5"/><circle fill="#6a7180" cx="12.5" cy="13.5" r="1.5"/><path fill="#6a7180" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                         </li>
                         <li class="menu-item"><a class="green" href="#">Оформить заказ</a></li>
@@ -35,8 +35,8 @@
                 <h1 class="visually-hidden">Интернет-магазин строительных материалов «Техномарт»</h1>
                 <div class="container">
                     <p class="description">
-                        Интернет-магазин<br>
-                        строительных материалов<br>
+                        Интернет-магазин
+                        строительных материалов
                         и инструментов для ремонта
                     </p>
                     <div class="contacts">
@@ -88,8 +88,8 @@
                 <div class="offers">
                     <div class="container">
                         <div class="slider">
-                            <input class="visually-hidden" type="radio" id="slide-1" name="slider-radio" checked>
-                            <input class="visually-hidden" type="radio" id="slide-2" name="slider-radio">
+                            <input class="visually-hidden slide-1" type="radio" id="slide-1" name="slider-radio" checked>
+                            <input class="visually-hidden slide-2" type="radio" id="slide-2" name="slider-radio">
                             <div class="slider-controls">
                                 <label class="slider-controls__point slider-controls__point-1" for="slide-1">
                                     <span class="visually-hidden">Первый слайд</span>
@@ -208,7 +208,7 @@
                             <img src="img/manufacturers-1.jpg" width="220" height="145" alt="BOSCH">
                         </a>
                         <a class="manufacturers-item" href="#">
-                            <img src="img/manufacturers-2.jpg" width="220" height="145" alt="Makiata">
+                            <img src="img/manufacturers-2.jpg" width="220" height="145" alt="Makita">
                         </a>
                         <a class="manufacturers-item" href="#">
                             <img src="img/manufacturers-3.jpg" width="220" height="145" alt="DeWALT">
@@ -236,9 +236,9 @@
                     <h2>Сервисы</h2>
                     <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                     <div class="services-slider">
-                        <input class="visually-hidden" type="radio" name="switches" id="delivery" checked>
-                        <input class="visually-hidden" type="radio" name="switches" id="guarantee">
-                        <input class="visually-hidden" type="radio" name="switches" id="credit">
+                        <input class="visually-hidden delivery" type="radio" name="switches" id="delivery" checked>
+                        <input class="visually-hidden guarantee" type="radio" name="switches" id="guarantee">
+                        <input class="visually-hidden credit" type="radio" name="switches" id="credit">
                         <div class="services-control">
                             <label class="services-control__item services-control__delivery" for="delivery">Доставка</label>
                             <label class="services-control__item services-control__guarantee" for="guarantee">Гарантия</label>
@@ -251,7 +251,7 @@
                                         <h2>Доставка</h2>
                                         <p>
                                             Мы с удовольствием доставим ваш товар прямо<br>
-                                            к вашему подъезду совершенно бесплатно!<br>
+                                            к вашему подъезду совершенно бесплатно!
                                             Ведь мы неплохо заработаем,<br>
                                             поднимая его на ваш этаж!
                                         </p>
@@ -264,8 +264,8 @@
                                         <h2>Гарантия</h2>
                                         <p>
                                             Если купленный у нас товар поломается или заискрит,<br>
-                                            а также в случае пожара, спровоцированного его возгаранием,<br>
-                                            вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                                            а также в случае пожара, спровоцированного его возгаранием,
+                                            вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                                             сгоревший товар на новый.<br>
                                             Дом уж восстановите как-нибудь сами.
                                         </p>
@@ -294,7 +294,7 @@
                     <section class="company-descript">
                         <h2>Компания «Техномарт»</h2>
                         <p class="paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-                        <p class="paragraph">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+                        <p class="paragraph">Мы можем доставить ваш товар в самые отдаленные точки России!
                         Техномарт работает со многими транспортными компаниями:</p>
                         <ul class="companies-list">
                             <li class="companies-item">Деловые линии</li>
@@ -305,7 +305,7 @@
                     </section>
                     <section class="contacts">
                         <h2>Контакты</h2>
-                        <p class="paragraph">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+                        <p class="paragraph">Вы можете забрать товар сами, заехав в наш офис:</p>
                         <button class="map" type="button">
                             <img src="img/map.jpg" width="300" height="158" alt="Карта проезда">
                         </button>
@@ -329,7 +329,7 @@
                     </div>
                     <div class="footer-submenu">
                         <p class="contacts">
-                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                         </p>
                         <ul class="footer-submenu__list">
@@ -343,7 +343,7 @@
             </div>
             <div class="bottom-footer__conainer">
                 <div class="container">
-                    <p class="copyright">© 2010–2020 Компания «Техномарт»<br>
+                    <p class="copyright">© 2010–2020 Компания «Техномарт»
                         Все права защищены</p>
                     <ul class="social-list">
                         <li class="social-item">
@@ -367,7 +367,7 @@
                     </ul>
                     <div class="feedback"> 
                         <p class="feedback-email">
-                            Обратная связь:<br>
+                            Обратная связь:
                             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                         </p>
                         <p class="feedback-site">
