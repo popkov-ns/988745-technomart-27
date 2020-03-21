@@ -1,9 +1,10 @@
-// Modal buy
-
+// Modal buy variables
 let buttonModalBuy = document.querySelectorAll('.button-buy');
 let popupModalBuy = document.querySelector('.modal-buy');
 let closeModalBuy = popupModalBuy.querySelector('.button-close');
 let сontinueModalBuy = popupModalBuy.querySelector('.continue-buy');
+
+// Modal buy
 
 for (let i = 0; i < buttonModalBuy.length; i++) {
   buttonModalBuy[i].addEventListener("click", function(evt) {

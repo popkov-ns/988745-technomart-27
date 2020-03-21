@@ -1334,12 +1334,15 @@ main h1 {
 }
 
 .contacts .write-us {
-    font-family: "Cuprum",Arial,sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+    display: block;
     padding: 10px 0;
     margin-top: 36px;
     width: 300px;
+
+    font-family: "Cuprum",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #ee3643;
