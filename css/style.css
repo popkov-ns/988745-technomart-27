@@ -1823,8 +1823,13 @@ main h1 {
 }
 
 .footer-menu__list {
-    width: 548px;
+    width: 592px;
     margin-top: 37px;
+}
+
+.footer-menu__item,
+.footer-submenu__item {
+    padding-left: 45px;
 }
 
 .footer-menu__item a,
@@ -1871,7 +1876,7 @@ main h1 {
 }
 
 .footer-submenu__list {
-    width: 525px;
+    width: 569px;
 }
 
 .footer-submenu__item a{
